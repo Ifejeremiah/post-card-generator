@@ -1,13 +1,9 @@
 import Sidebar from 'ui-components/Sidebar';
 import styles from './Layout.module.sass';
 import Navbar from 'ui-components/Navbar';
-import { ReactNode } from 'react';
+import PropsModel from 'types/PropsModel';
 
-interface IProps {
-	children: ReactNode;
-}
-
-function Layout({ children }: IProps) {
+function Layout({ children }: PropsModel) {
 	return (<div className={styles['con-section']}>
 		<div className={`${styles['section-a']} d-flex align-items-center justify-content-center`}>
 			<Sidebar />
